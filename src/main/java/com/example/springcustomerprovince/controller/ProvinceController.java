@@ -18,11 +18,8 @@ public class ProvinceController {
     @Autowired
     private IProvinceService provinceService;
 
-    private final ICustomerService customerService;
-
-    public ProvinceController(ICustomerService _customerService) {
-        this.customerService = _customerService;
-    }
+    @Autowired
+    private ICustomerService customerService;
 
     @GetMapping
     public ModelAndView listProvince() {
