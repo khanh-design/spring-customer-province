@@ -1,4 +1,6 @@
 package com.example.springcustomerprovince.service;
 
-public interface IProvinceService {
+import com.example.springcustomerprovince.model.Province;
+
+public interface IProvinceService extends IGeneralService<Province>{
 }
